@@ -10,7 +10,7 @@ export function Main(data) {
     container.append(
         CurrentValue(data.currentValue), 
         ProgressBarContainer(data), 
-        ButtonsContainer(data)
+        ButtonsContainer()
     );
 
     return container;
