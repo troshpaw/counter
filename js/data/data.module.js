@@ -1,9 +1,15 @@
 
-import { render } from "../render/render.module.js";
+// import { render } from "../render/render.module.js";
 
 export const data = {
     maxValue: 10,
     currentValue: 0
+}
+
+let changeDataCallback = function() {}
+
+export function setChangeDataCallback(newCallback) {
+    changeDataCallback = newCallback;
 }
 
 export function increment() {
@@ -11,7 +17,7 @@ export function increment() {
         data.currentValue = data.currentValue + 1;
     }
 
-    render();
+    changeDataCallback();
 }
 
 // setInterval(increment, 1000);
