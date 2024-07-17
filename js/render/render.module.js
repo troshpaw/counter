@@ -1,5 +1,4 @@
 
-// import { setChangeDataCallback } from "../data/data.module.js";
 import { Counter } from "./components/Counter/Counter.js";
 
 const root = document.getElementById("root");

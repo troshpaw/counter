@@ -8,8 +8,8 @@ export function Main() {
     container.classList.add("main");
 
     container.append(
-        CurrentValue(/*data.currentValue*/), 
-        ProgressBarContainer(/*data*/), 
+        CurrentValue(), 
+        ProgressBarContainer(), 
         ButtonsContainer()
     );
 

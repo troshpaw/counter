@@ -1,6 +1,4 @@
 
-// import { render } from "../render/render.module.js";
-
 export const data = {
     maxValue: 10,
     currentValue: 0
@@ -25,5 +23,3 @@ export function reset() {
 
     changeDataCallback();
 }
-
-// setInterval(increment, 1000);
