@@ -1,7 +1,8 @@
 
 import { Counter } from "./components/Counter/Counter.js";
 
-export function render(data) {
+export function render() {
     const root = document.getElementById("root");
-    root.append(Counter(data));
+    root.innerHTML = "";
+    root.append(Counter());
 }
