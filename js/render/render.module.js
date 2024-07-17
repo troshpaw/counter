@@ -1,11 +1,10 @@
 
-import { setChangeDataCallback } from "../data/data.module.js";
+// import { setChangeDataCallback } from "../data/data.module.js";
 import { Counter } from "./components/Counter/Counter.js";
 
+const root = document.getElementById("root");
+
 export function render() {
-    const root = document.getElementById("root");
     root.innerHTML = "";
     root.append(Counter());
 }
-
-setChangeDataCallback(render);

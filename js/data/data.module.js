@@ -14,8 +14,14 @@ export function setChangeDataCallback(newCallback) {
 
 export function increment() {
     if (data.currentValue < data.maxValue) {
-        data.currentValue = data.currentValue + 1;
+        data.currentValue += 1;
     }
+
+    changeDataCallback();
+}
+
+export function reset() {
+    data.currentValue = 0;
 
     changeDataCallback();
 }
